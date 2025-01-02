@@ -1,0 +1,10 @@
+# Ignore QtCreator Project file
+/CMakeLists.txt.user*
+
+# Ignore Visual Studio/Code
+/CMakeSettings.json
+/.vs
+/.vscode
+
+# Build directory
+/build
