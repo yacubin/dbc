@@ -6,7 +6,7 @@ export default (mk) => {
   mk.PROJECT_NAME = "dbc";
   mk.PROJECT_VERSION = "0.0.1";
   mk.PROJECT_DESCRIPTION = "DBC handles parsing and encoding CAN data using DBC files for automotive systems";
-  mk.PROJECT_HOMEPAGE_URL = "https://github.com/ykbin/dbc";
+  mk.PROJECT_HOMEPAGE_URL = "https://github.com/yacubin/dbc";
 
   mk.DBC_CPU_32BIT = (mk.SIZEOF_VOID_P == 4);
   mk.DBC_LOG_ENABLE = (mk.BUILD_TYPE === "Debug");
@@ -48,8 +48,8 @@ export default (mk) => {
 
   const config_h = mk.BINARY_DIR.join("config.h");
   mk.addCustomScript("configure_file", {
-    input: "config.h.cmake",
-    output: config_h,
+    SCRIPT_INPUT: "config.h.cmake",
+    SCRIPT_OUTPUT: config_h,
   });
 
   const dbc = mk.addStaticLibrary("dbc", sources, config_h);

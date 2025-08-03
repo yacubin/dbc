@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 project(dbc VERSION 0.0.1
   DESCRIPTION "DBC handles parsing and encoding CAN data using DBC files for automotive systems"
-  HOMEPAGE_URL "https://github.com/ykbin/dbc"
+  HOMEPAGE_URL "https://github.com/yacubin/dbc"
   LANGUAGES C
   )
 
